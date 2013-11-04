@@ -12,7 +12,7 @@ describe Wonga::Daemon::BillImportedEventHandler do
 
     it "sends post request" do
       subject.handle_message(message)
-      expect(api_client).to have_received(:send_post_request).with('bills', message)
+      expect(api_client).to have_received(:send_post_request).with('/api/costs', message)
     end
   end
 end

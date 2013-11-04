@@ -7,7 +7,7 @@ module Wonga
       end
 
       def handle_message(message)
-        @api_client.send_post_request('bills', message)
+        @api_client.send_post_request('/api/costs', message)
       end
     end
   end
