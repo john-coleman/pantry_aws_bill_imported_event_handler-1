@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'daemons'
-gem 'aws-sdk'
 gem 'pantry_daemon_common', git: 'git@github.com:wongatech/pantry_daemon_common.git'
 gem 'rest-client'
 
@@ -13,8 +11,8 @@ end
 group :test, :development do
   gem 'simplecov', require: false
   gem 'simplecov-rcov', require: false
-  gem 'rspec-fire'
-  gem 'rspec'
-  gem 'pry-debugger'
+  gem 'pry'
   gem 'rake'
+  gem 'rspec'
+  gem 'rubocop'
 end
